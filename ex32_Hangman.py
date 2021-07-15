@@ -32,7 +32,7 @@ functions to help you!
 import random
 
 
-def random_word(file_name):
+def random_word(file_name="sowpods.txt"):
     words = []
 
     with open(file_name, 'r') as f:
