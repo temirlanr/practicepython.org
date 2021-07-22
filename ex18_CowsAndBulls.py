@@ -50,8 +50,9 @@ def cows_n_bulls(gn, rn):
 
 def generate_number(digits=4):
     res = []
-    for _ in range(digits):
-        res.append(str(random.randint(1, 9)))
+    res.append(str(random.randint(1, 9)))
+    for _ in range(digits-1):
+        res.append(str(random.randint(0, 9)))
     return int(''.join(res))
 
 
